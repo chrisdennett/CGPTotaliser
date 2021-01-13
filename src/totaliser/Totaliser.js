@@ -5,10 +5,13 @@ import styled from "styled-components";
 
 export default function Totaliser() {
   const target = 7500;
-  const completed = 5000;
-  const currLevelIndex = 0;
+  const completed = 455;
 
   const levelData = getLevelData(target, completed);
+  const firstUncompletedLevel = levelData.find(
+    (l) => l.levelProgress < l.levelMaxScore
+  );
+  const currLevelIndex = firstUncompletedLevel.levelIndex;
 
   return (
     <Page>
@@ -53,7 +56,8 @@ function getLevelData(target, completed) {
       levelNumber: l + 1,
       levelMaxScore,
       levelProgress: 0,
-      levelComplete: true
+      levelComplete: true,
+      levelIndex: l
     };
     const prevLevelMax = l * bandsPerLevel * bandMax;
     level.bandData = [];
