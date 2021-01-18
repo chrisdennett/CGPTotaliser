@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./totaliser.module.css";
-import styled from "styled-components";
 import ProgressBandSvg from "./ProgressBandSvg";
 
 export default function LevelPanel({ levelData }) {
@@ -11,14 +10,9 @@ export default function LevelPanel({ levelData }) {
   }
 
   return (
-    <Container>
+    <div className={styles.currentLevelPanel}>
       <h1 className={styles.levelHeader}>LevelPanel: {levelNumber}</h1>
       {bands}
-    </Container>
+    </div>
   );
 }
-
-const Container = styled.div`
-  max-width: 600px;
-  width: 100%;
-`;

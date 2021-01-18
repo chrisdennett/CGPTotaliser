@@ -9,3 +9,53 @@
 .prizePanel {
   font-family: "Alegreya Sans SC", sans-serif;
 }
+
+.page {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.currentLevelPanel {
+  max-width: 800px;
+  width: 100%;
+}
+
+.background {
+  background: #9ae6ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.sun {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50px;
+  left: calc(50% - 100px);
+}
+
+.waves1 {
+  position: absolute;
+  bottom: 0;
+}
+
+.waves2 {
+  position: absolute;
+  bottom: 10px;
+}
+
+.waves3 {
+  position: absolute;
+  bottom: 20px;
+}
+
+.island1 {
+  width: 300px;
+  position: absolute;
+  bottom: 100px;
+}

@@ -1,11 +1,12 @@
 import React from "react";
+import Background from "./Background";
 import LevelPanel from "./LevelPanel";
 import PrizePanel from "./PrizePanel";
-import styled from "styled-components";
+import styles from "./totaliser.module.css";
 
 export default function Totaliser() {
   const target = 7500;
-  const completed = 455;
+  const completed = 875;
 
   const levelData = getLevelData(target, completed);
   const firstUncompletedLevel = levelData.find(
@@ -14,18 +15,13 @@ export default function Totaliser() {
   const currLevelIndex = firstUncompletedLevel.levelIndex;
 
   return (
-    <Page>
+    <div className={styles.page}>
+      <Background />
       <PrizePanel data={levelData} />
       <LevelPanel levelData={levelData[currLevelIndex]} />
-    </Page>
+    </div>
   );
 }
-
-const Page = styled.div`
-  display: flex;
-  width: 100vw;
-  min-height: 100vh;
-`;
 
 const colours = [
   "#5d4fc0",
