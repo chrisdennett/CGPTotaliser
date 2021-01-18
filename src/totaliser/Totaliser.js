@@ -19,8 +19,11 @@ export default function Totaliser() {
   return (
     <div className={styles.page}>
       <Background allowAnimation={allowAnimation} />
-      <PrizePanel data={levelData} target={target} />
-      <LevelPanel levelData={levelData[currLevelIndex]} />
+
+      <div className={styles.content}>
+        <PrizePanel data={levelData} target={target} />
+        <LevelPanel levelData={levelData[currLevelIndex]} />
+      </div>
     </div>
   );
 }

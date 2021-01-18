@@ -1,12 +1,13 @@
 .levelPanel {
   width: 100%;
   max-width: 700px;
+  min-width: 450px;
   /* display: none; */
   background: rgba(255, 255, 255, 0.8);
   margin: 20px 20px 20px 5px;
   padding: 30px;
   border-radius: 10px;
-  max-height: 100%;
+  max-height: calc(100vh - 100px);
   overflow: auto;
 }
 
@@ -33,5 +34,20 @@
   .levelHeader {
     -webkit-text-stroke: 2px black;
     -webkit-text-fill-color: white;
+  }
+}
+
+@media (max-width: 727px) {
+  .levelPanel {
+    min-width: 250px;
+    margin: 5px;
+    padding: 5px;
+  }
+  .levelHeader {
+    font-size: 42px;
+    line-height: 42px;
+  }
+  .levelNumber {
+    font-size: 42px;
   }
 }

@@ -2,14 +2,14 @@
   font-family: "Alegreya Sans SC", sans-serif;
 
   width: 100%;
-  min-width: 350px;
+  min-width: 150px;
   max-width: 350px;
   /* display: none; */
   background: rgba(255, 255, 255, 0.8);
   margin: 20px 5px 20px 20px;
   padding: 20px;
   border-radius: 10px;
-  max-height: 100%;
+  max-height: calc(100vh - 80px);
   overflow: auto;
   display: flex;
   flex-wrap: wrap;
@@ -42,4 +42,24 @@
 
 .prizeIconHolder {
   padding: 5px;
+}
+
+@media (max-width: 727px) {
+  .prizePanel {
+    min-width: 250px;
+    max-width: 100%;
+    max-height: inherit;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .prizeHeader h1 {
+    font-size: 42px;
+  }
+  .prizeHeader h2 {
+    font-size: 42px;
+  }
+  .prizeIconHolder {
+    padding: 0;
+  }
 }

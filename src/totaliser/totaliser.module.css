@@ -2,10 +2,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,800&display=swap");
 
 .page {
-  display: flex;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+.content {
+  overflow: auto;
+  display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 727px) {
+  .content {
+    flex-wrap: wrap;
+  }
 }
