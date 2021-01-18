@@ -7,6 +7,7 @@ import Waves2 from "./Waves2";
 import Waves3 from "./Waves3";
 import Island from "./Island";
 import HorizonClouds from "./HorizonClouds";
+import Cloud from "./Cloud";
 
 export default function Background() {
   // const { width: bgWidth, height: bgHeight } = useWindowSize();
@@ -24,6 +25,10 @@ export default function Background() {
         className={styles.horizonClouds}
         preserveAspectRatio="none"
       />
+
+      <Cloud className={styles.cloud1} />
+      <Cloud className={styles.cloud2} />
+      <Cloud className={styles.cloud3} />
 
       <Waves3 className={styles.waves3} preserveAspectRatio="none" />
 
