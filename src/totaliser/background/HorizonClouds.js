@@ -1,8 +1,12 @@
 import React from "react";
 
-function HorizonClouds({ className }) {
+function HorizonClouds({ className, preserveAspectRatio }) {
   return (
-    <svg className={className} viewBox="0 0 346.604 78.588">
+    <svg
+      className={className}
+      viewBox="0 0 346.604 78.588"
+      preserveAspectRatio={preserveAspectRatio}
+    >
       <g>
         <g>
           <g

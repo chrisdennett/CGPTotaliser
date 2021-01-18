@@ -1,11 +1,12 @@
 import React from "react";
+import styles from "./background.module.css";
 // import { useWindowSize } from "../hooks/useWindowSize";
 import Sun from "./Sun";
-import styles from "./background.module.css";
 import Waves1 from "./Waves1";
 import Waves2 from "./Waves2";
 import Waves3 from "./Waves3";
 import Island from "./Island";
+import HorizonClouds from "./HorizonClouds";
 
 export default function Background() {
   // const { width: bgWidth, height: bgHeight } = useWindowSize();
@@ -19,11 +20,20 @@ export default function Background() {
     <div className={styles.background}>
       <Sun className={styles.sun} />
 
+      <HorizonClouds
+        className={styles.horizonClouds}
+        preserveAspectRatio="none"
+      />
+
       <Waves3 className={styles.waves3} preserveAspectRatio="none" />
+
       <Island className={styles.island3} />
       <Island className={styles.island2} />
+
       <Waves2 className={styles.waves2} preserveAspectRatio="none" />
+
       <Island className={styles.island1} flip />
+
       <Waves1 className={styles.waves1} preserveAspectRatio="none" />
     </div>
   );
