@@ -20,8 +20,10 @@ export default function Background() {
       <Sun className={styles.sun} />
 
       <Waves3 className={styles.waves3} preserveAspectRatio="none" />
+      <Island className={styles.island3} />
+      <Island className={styles.island2} />
       <Waves2 className={styles.waves2} preserveAspectRatio="none" />
-      <Island className={styles.island1} />
+      <Island className={styles.island1} flip />
       <Waves1 className={styles.waves1} preserveAspectRatio="none" />
     </div>
   );
