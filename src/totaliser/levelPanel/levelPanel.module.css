@@ -1,0 +1,10 @@
+.currentLevelPanel {
+  max-width: 800px;
+  width: 100%;
+  /* display: none; */
+}
+
+.levelHeader {
+  font-family: "Alegreya Sans SC", sans-serif;
+  /* font-family: "Sigmar One", cursive; */
+}

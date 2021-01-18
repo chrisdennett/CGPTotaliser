@@ -1,7 +1,7 @@
 import React from "react";
-import Background from "./Background";
-import LevelPanel from "./LevelPanel";
-import PrizePanel from "./PrizePanel";
+import Background from "./background/Background";
+import LevelPanel from "./levelPanel/LevelPanel";
+import PrizePanel from "./prizePanel/PrizePanel";
 import styles from "./totaliser.module.css";
 
 export default function Totaliser() {

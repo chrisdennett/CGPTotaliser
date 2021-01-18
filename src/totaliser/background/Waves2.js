@@ -1,8 +1,12 @@
 import React from "react";
 
-function Waves2({ className }) {
+function Waves2({ className, preserveAspectRatio }) {
   return (
-    <svg className={className} viewBox="0 0 346.604 50.579">
+    <svg
+      className={className}
+      preserveAspectRatio={preserveAspectRatio}
+      viewBox="0 0 346.604 50.579"
+    >
       <g>
         <path
           fill="#2979c2"

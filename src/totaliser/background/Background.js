@@ -1,7 +1,7 @@
 import React from "react";
 // import { useWindowSize } from "../hooks/useWindowSize";
 import Sun from "./Sun";
-import styles from "./totaliser.module.css";
+import styles from "./background.module.css";
 import Waves1 from "./Waves1";
 import Waves2 from "./Waves2";
 import Waves3 from "./Waves3";
@@ -19,10 +19,10 @@ export default function Background() {
     <div className={styles.background}>
       <Sun className={styles.sun} />
 
-      <Waves3 className={styles.waves3} />
-      <Waves2 className={styles.waves2} />
+      <Waves3 className={styles.waves3} preserveAspectRatio="none" />
+      <Waves2 className={styles.waves2} preserveAspectRatio="none" />
       <Island className={styles.island1} />
-      <Waves1 className={styles.waves1} />
+      <Waves1 className={styles.waves1} preserveAspectRatio="none" />
     </div>
   );
 }

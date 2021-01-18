@@ -1,8 +1,12 @@
 import React from "react";
 
-function Waves3({ className }) {
+function Waves3({ className, preserveAspectRatio }) {
   return (
-    <svg viewBox="0 0 346.604 49.69" className={className}>
+    <svg
+      viewBox="0 0 346.604 49.69"
+      className={className}
+      preserveAspectRatio={preserveAspectRatio}
+    >
       <g>
         <path
           fill="#1859ad"
@@ -17,7 +21,7 @@ function Waves3({ className }) {
           overflow="visible"
           paintOrder="markers fill stroke"
           stopColor="#000"
-        ></path>
+        />
       </g>
     </svg>
   );

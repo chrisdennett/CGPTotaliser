@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./totaliser.module.css";
+import styles from "./levelPanel.module.css";
 import ProgressBandSvg from "./ProgressBandSvg";
 
 export default function LevelPanel({ levelData }) {
