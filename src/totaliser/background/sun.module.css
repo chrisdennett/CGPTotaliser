@@ -1,0 +1,17 @@
+.sunBurst {
+  animation-name: rotate;
+  animation-duration: 100s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: center center;
+}
+
+/* ANIMS */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

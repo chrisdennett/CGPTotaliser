@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./sun.module.css";
 
 function Sun({ className }) {
   return (
@@ -13,7 +14,7 @@ function Sun({ className }) {
         color="#000"
         paintOrder="markers fill stroke"
       >
-        <g>
+        <g className={styles.sunBurst}>
           <rect
             width="5.929"
             height="15.536"

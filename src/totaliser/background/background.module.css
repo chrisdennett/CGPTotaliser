@@ -80,19 +80,40 @@
   position: absolute;
   width: 23%;
   top: 8%;
-  left: 5%;
+
+  animation-name: moveclouds;
+  animation-duration: 180s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .cloud2 {
   position: absolute;
   width: 13%;
   top: 25%;
-  right: 30%;
+  /* right: 30%; */
+  animation-name: moveclouds;
+  animation-duration: 130s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .cloud3 {
   position: absolute;
   width: 20%;
   top: 5%;
-  right: 5%;
+  /* right: 5%; */
+  animation-name: moveclouds;
+  animation-duration: 90s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveclouds {
+  0% {
+    margin-left: 100vw;
+  }
+  100% {
+    margin-left: -23%;
+  }
 }
