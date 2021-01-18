@@ -9,7 +9,7 @@ import Island from "./Island";
 import HorizonClouds from "./HorizonClouds";
 import Cloud from "./Cloud";
 
-export default function Background() {
+export default function Background({ allowAnimation }) {
   // const { width: bgWidth, height: bgHeight } = useWindowSize();
 
   // const vw = 346.6;
@@ -19,16 +19,22 @@ export default function Background() {
 
   return (
     <div className={styles.background}>
-      <Sun className={styles.sun} />
+      <Sun className={styles.sun} allowAnimation={allowAnimation} />
 
       <HorizonClouds
         className={styles.horizonClouds}
         preserveAspectRatio="none"
       />
 
-      <Cloud className={styles.cloud1} />
-      <Cloud className={styles.cloud2} />
-      <Cloud className={styles.cloud3} />
+      <Cloud
+        className={`${styles.cloud1} ${allowAnimation && styles.animatedCloud}`}
+      />
+      <Cloud
+        className={`${styles.cloud2} ${allowAnimation && styles.animatedCloud}`}
+      />
+      <Cloud
+        className={`${styles.cloud3} ${allowAnimation && styles.animatedCloud}`}
+      />
 
       <Waves3 className={styles.waves3} preserveAspectRatio="none" />
 

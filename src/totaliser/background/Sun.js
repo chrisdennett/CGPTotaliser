@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./sun.module.css";
 
-function Sun({ className }) {
+function Sun({ className, allowAnimation }) {
   return (
     <svg className={className} viewBox="0 0 87.313 87.313">
       <g
@@ -14,7 +14,7 @@ function Sun({ className }) {
         color="#000"
         paintOrder="markers fill stroke"
       >
-        <g className={styles.sunBurst}>
+        <g className={allowAnimation ? styles.sunBurst : ""}>
           <rect
             width="5.929"
             height="15.536"
