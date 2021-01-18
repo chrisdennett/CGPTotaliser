@@ -10,8 +10,10 @@ export default function LevelPanel({ levelData }) {
   }
 
   return (
-    <div className={styles.currentLevelPanel}>
-      <h1 className={styles.levelHeader}>LevelPanel: {levelNumber}</h1>
+    <div className={styles.levelPanel}>
+      <h1 className={styles.levelHeader}>
+        Level <span className={styles.levelNumber}>{levelNumber}</span>
+      </h1>
       {bands}
     </div>
   );

@@ -14,12 +14,12 @@ export default function Totaliser() {
   );
   const currLevelIndex = firstUncompletedLevel.levelIndex;
 
-  const allowAnimation = false;
+  const allowAnimation = true;
 
   return (
     <div className={styles.page}>
       <Background allowAnimation={allowAnimation} />
-      <PrizePanel data={levelData} />
+      <PrizePanel data={levelData} target={target} />
       <LevelPanel levelData={levelData[currLevelIndex]} />
     </div>
   );

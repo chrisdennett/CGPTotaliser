@@ -1,4 +1,45 @@
 .prizePanel {
   font-family: "Alegreya Sans SC", sans-serif;
+
+  width: 100%;
+  min-width: 350px;
+  max-width: 350px;
   /* display: none; */
+  background: rgba(255, 255, 255, 0.8);
+  margin: 20px 5px 20px 20px;
+  padding: 20px;
+  border-radius: 10px;
+  max-height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.prizeHeader {
+  text-align: center;
+  display: inline-flex;
+  margin-right: 20px;
+  flex-direction: column;
+  height: 116px;
+}
+
+.prizeHeader h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 49px;
+  line-height: 42px;
+  padding-top: 15px;
+}
+
+.prizeHeader h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 88px;
+  line-height: 42px;
+}
+
+.prizeIconHolder {
+  padding: 5px;
 }
